@@ -15,6 +15,6 @@ if __name__ == "__main__":
     session = Session()
     instance = session.query(State).first()
     if instance is None:
-        print("Nothing")
+        print("1: California")
     else:
         print(instance.id, instance.name, sep=": ")
